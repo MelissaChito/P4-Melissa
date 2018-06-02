@@ -1,0 +1,33 @@
+<?page title="Countries"?>
+<window apply="com.uae.controller.CiudadController" title="Ciudades" border="normal"
+width="60%" height="770px" position="center" mode="modal">
+
+<label id="lbl1" value="Nombre de la Ciudad"/>
+<space width="5px" />
+<textbox id="txtNombre"></textbox>
+
+<separator></separator>
+
+<label id="lbl2" value="Pais"/>
+<space width="5px" />
+<textbox id="txtPais"></textbox>
+
+<separator></separator>
+
+
+<div style="text-align: right;">
+    <button id="btnGuardar" label="Guardar"/>
+	<space width="5px" />
+</div>
+
+<separator></separator>
+
+<listbox id="lstCiudades"  mold="paging" sizedByContent="true" pageSize="6">
+    <listhead sizable="true">
+        <listheader label="ID" width="50px"/>
+        <listheader label="Ciudad" width="200px"/>
+        <listheader label="Pais" width="150px"/>
+        
+    </listhead>
+</listbox>
+</window>
